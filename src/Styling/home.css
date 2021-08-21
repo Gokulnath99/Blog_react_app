@@ -97,11 +97,16 @@ body {
   color: #fff;
   background: #17181c;
   font: 300 1em "Fira Sans", sans-serif;
+  
+}
+
+.home__page {
   justify-content: center;
   align-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 500px;
+  max-height: 100%;
   display: flex;
 }
 
@@ -122,3 +127,4 @@ code {
   color: #e4cb58;
   font: inherit;
 }
+
