@@ -3,10 +3,10 @@ body {
   }
 
 .footer {
-    position: fixed;
+    padding: 20px;
     left: 0;
     bottom: 0;
-    width: 100%;
+    margin-top: 20px;
     background-color: rgb(49, 49, 49);
     color: white;
     text-align: center;

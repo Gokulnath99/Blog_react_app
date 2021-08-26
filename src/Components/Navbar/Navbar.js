@@ -8,8 +8,8 @@ import {
     setInput,
     setSignedIn,
     setUserData
-} from '../features/userSlice';
-import '../Styling/navbar.css';
+} from '../../features/userSlice';
+import './navbar.css';
 
 const Navbar = () => {
 
@@ -24,7 +24,10 @@ const Navbar = () => {
         dispatch(setUserData(null))
     }
 
-    const handleClick = (e) => {};
+    const handleClick = (e) => {
+        e.preventDefault();
+        dispatch(setInput(inputValue))
+    };
 
     return (
         <div className="navbar">

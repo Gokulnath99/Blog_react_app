@@ -3,9 +3,9 @@ import GoogleLogin from 'react-google-login';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectSignedIn, setSignedIn, setUserData } from '../features/userSlice';
 
-import "../Styling/home.css"
+import "../Styling/loginform.css"
 
-const Hompage = () => {
+const LoginForm = () => {
 
     const dispatch = useDispatch();
     const login = (response) =>{
@@ -17,7 +17,7 @@ const Hompage = () => {
     const isSignedIn = useSelector(selectSignedIn);
 
     return (
-        <div className="home__page" style={{ display: isSignedIn ? "none" : ""}}>
+        <div className="login__form" style={{ display: isSignedIn ? "none" : ""}}>
             {!isSignedIn ?
             <div className="login__message">
                 <h2>🧾</h2>
@@ -46,4 +46,4 @@ const Hompage = () => {
     )
 }
 
-export default Hompage
+export default LoginForm
