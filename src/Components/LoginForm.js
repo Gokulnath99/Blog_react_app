@@ -33,7 +33,7 @@ const LoginForm = () => {
                             onClick={renderProps.onClick}
                             disabled={renderProps.disabled}
                         >
-                            Login with Google
+                            Login
                         </button>                      
                     )}
                     onSuccess={login}
